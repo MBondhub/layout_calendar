@@ -23,7 +23,7 @@ body {
 .calendar {
   display: flex;
   flex-wrap: wrap;
-  width: #{2 * $paddings + $cols * $cell-size + ($cols - 1) * $gap};
+  width: 707px;
   gap: $gap;
   padding-inline: $paddings;
 }
@@ -51,6 +51,7 @@ body {
 }
 
 .calendar__day {
+  box-sizing: border-box;
   position: relative;
   width: $cell-size;
   height: $cell-size;
